@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr" data-lt-installed="true"><head>
+    <meta charset="utf-8">
+    <title>Comanda de Pedidos</title>
+  </head>
+  <body>
+    <div id="interface">
+      <h1>Comanda de Pedidos //PIZZARIA DO GORDO//</h1>
+
+      <table>
+        <tbody><tr class="relatorio">
+          <th>Pedido</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+        </tr>
+        
+        <tr>
+          <td class="subtitulo pizzas" colspan="3"><h2>PIZZAS</h2></td>
+        </tr>
+
+        <tr class="item pizzas">
+          <td>PIZZA ITALINA</td>
+          <td>R$ 20,20</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pizzas">
+          <td>PIZZA DE FRANGO</td>
+          <td>R$ 20,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pizzas">
+          <td>PIZZA DE CARNE DE SOL COM QUEIJO</td>
+          <td>R$ 20,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pizzas">
+          <td>PIZZA CALABRESA</td>
+          <td>R$ 20,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pizzas">
+          <td>PIZZA DE LOMBO</td>
+          <td>R$ 25,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pizzas">
+          <td>PIZZA A MODA </td>
+          <td>R$ 25,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pizzas">
+          <td>PIZZA 4 QUEIJOS</td>
+          <td>R$ 24,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pizzas">
+          <td>2 SABORES</td>
+          <td>R$ 24,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+
+
+
+        <tr>
+          <td class="subtitulo adicionais" colspan="3"><h2>Adicionais</h2></td>
+        </tr>
+        <tr class="item adicionais">
+          <td>Doblue catupiry</td>
+          <td>R$ 5,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item adicionais">
+          <td>Borda recheiada queijo</td>
+          <td>R$ 7,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item adicionais">
+          <td>Borda Catupiry</td>
+          <td>R$ 8,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item adicionais">
+          <td>COMBO MASTER</td>
+          <td>R$ 18,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        
+
+        <tr>
+          <td class="subtitulo pasteis" colspan="3"><h2>PASTEIS Simples</h2></td>
+        </tr>
+        <tr class="item PASTEIS">
+          <td>CARNE</td>
+          <td>R$ 9,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item PASTEIS">
+          <td>FRANGO</td>
+          <td>R$ 7,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item pasteis">
+          <td>2 SABORES</td>
+          <td>R$ 12,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+      
+        <tr>
+          <td class="subtitulo bebidas" colspan="3"><h3>Bebidas</h3></td>
+        </tr>
+       
+        <tr class="item bebidas">
+          <td>Cerveja lata</td>
+          <td>R$ 5,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item bebidas">
+          <td>Cerveja Longneck</td>
+          <td>R$ 8,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item bebidas">
+          <td>Cerveja 600</td>
+          <td>R$ 7,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item bebidas">
+          <td>Refrigerante lata</td>
+          <td>R$ 5,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item bebidas">
+          <td>Refrigerante 600</td>
+          <td>R$ 7,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item bebidas">
+          <td>Refrigerante 1L</td>
+          <td>R$ 8,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr class="item bebidas">
+          <td>Refrigerante 2L</td>
+          <td>R$ 10,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+    
+        <tr class="item bebidas">
+          <td>Suco jarra</td>
+          <td>R$ 12,00</td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr id="total">
+          <td colspan="4">Clique no botão para finalizar o pedido!</td>
+        </tr>
+      </tbody></table>
+      <button id="botao" type="button" name="button" onclick="main()">Finalizar Pedido</button>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  
+
+</body></html>
